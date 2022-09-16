@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "515599263613",
+    "project_id": "kistec-80a0d",
+    "storage_bucket": "kistec-80a0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515599263613:android:e3029e043f8e5c8910ce14",
+        "android_client_info": {
+          "package_name": "com.in.kistec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515599263613-448fgui1pvj1ctgrfut8nb0brsrtithm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in.kistec",
+            "certificate_hash": "c559d8f40a1010787947a5c89b36245b25ebe974"
+          }
+        },
+        {
+          "client_id": "515599263613-ivoqjfbad5t6as6gc3h22gtmi83fcsqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj4Is6lx1327XRLyeuTxv6QPywEVvY_5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515599263613-ivoqjfbad5t6as6gc3h22gtmi83fcsqj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

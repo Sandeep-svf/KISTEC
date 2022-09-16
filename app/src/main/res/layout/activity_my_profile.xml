@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".ManageProfile.ManageProfileActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/profile_background">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:id="@+id/nju"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/red">
+                <ImageView
+                    android:id="@+id/backArrowUpdate"
+                    android:padding="10dp"
+                    android:src="@drawable/back_arrow"
+                    android:layout_width="50dp"
+                    android:tint="@color/white"
+                    android:layout_height="match_parent"
+                    tools:ignore="UseAppTint">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/headerName"
+                    android:textSize="@dimen/submit_layout"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Update Profile"
+                    android:gravity="center"
+                    android:textColor="@color/white" >
+                </TextView>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_marginTop="80dp"
+                    android:layout_below="@+id/nju"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_profile_border">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/setUserProfile"
+                            android:layout_gravity="center"
+                            android:fitsSystemWindows="true"
+                            android:src="@drawable/save"
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            >
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/uploadProfileAddButton"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_width="30dp"
+                            android:layout_marginBottom="60dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/add_circle_design"
+                            android:layout_toRightOf="@+id/userProfileManage"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_color_icon"
+                                tools:ignore="UseAppTint">
+
+                            </ImageView>
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="25dp"
+                        android:alpha="0.6"
+                        app:cardCornerRadius="14dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="20dp">
+
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:background="@drawable/registration_custom_design"
+                                >
+
+
+                                <LinearLayout
+                                    android:id="@+id/l1"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="10dp">
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Edit_Proifle"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/heading">
+                                    </TextView>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/names"
+                                    android:textSize="@dimen/fab_margin"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="20dp">
+
+                                </TextView>
+
+                                <LinearLayout
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:weightSum="6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <EditText
+                                        android:id="@+id/setUserName"
+                                        android:inputType="text"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@null"
+                                        android:textColorHint="@color/hint"
+                                        android:textSize="@dimen/fab_margin"
+                                        android:layout_weight="5"
+                                        android:layout_width="0dp"
+                                        android:textColor="@color/white"
+                                        android:layout_height="wrap_content">
+                                    </EditText>
+                                    <ImageView
+                                        android:src="@drawable/user_profile_icon"
+                                        android:tint="@color/white"
+                                        android:layout_marginBottom="5dp"
+                                        tools:ignore="UseAppTint"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        >
+                                    </ImageView>
+
+                                </LinearLayout>
+                                <View
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/white">
+                                </View>
+
+
+                                <TextView
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/emails"
+                                    android:textSize="@dimen/fab_margin"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="20dp">
+
+                                </TextView>
+                                <LinearLayout
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:weightSum="6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <EditText
+                                        android:id="@+id/setUserEmail"
+                                        android:inputType="textEmailAddress"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@null"
+                                        android:textSize="@dimen/fab_margin"
+                                        android:layout_weight="5"
+                                        android:layout_width="0dp"
+                                        android:textColor="@color/white"
+                                        android:layout_height="wrap_content">
+                                    </EditText>
+                                    <ImageView
+                                        android:src="@drawable/at"
+                                        android:tint="@color/white"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        tools:ignore="UseAppTint">
+                                    </ImageView>
+
+                                </LinearLayout>
+                                <View
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/white">
+                                </View>
+
+                                <TextView
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/phone_nomber"
+                                    android:textSize="@dimen/fab_margin"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="20dp" />
+
+                                <LinearLayout
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:weightSum="6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <EditText
+                                        android:id="@+id/setUserMobile"
+                                        android:inputType="phone"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@null"
+                                        android:textColorHint="@color/hint"
+                                        android:textSize="@dimen/fab_margin"
+                                        android:layout_weight="5"
+                                        android:layout_width="0dp"
+                                        android:textColor="@color/white"
+                                        android:layout_height="wrap_content">
+                                    </EditText>
+                                    <ImageView
+                                        android:src="@drawable/phone_call_icon"
+                                        android:tint="@color/white"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        tools:ignore="UseAppTint">
+                                    </ImageView>
+
+                                </LinearLayout>
+                                <View
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/white">
+                                </View>
+
+
+
+                                <TextView
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:text="@string/cityName"
+                                    android:textSize="@dimen/fab_margin"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="20dp" />
+
+                                <LinearLayout
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:weightSum="6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <EditText
+                                        android:id="@+id/set_city_name"
+                                        android:inputType="text"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@null"
+                                        android:textColorHint="@color/hint"
+                                        android:textSize="@dimen/fab_margin"
+                                        android:layout_weight="5"
+                                        android:layout_width="0dp"
+                                        android:textColor="@color/white"
+                                        android:layout_height="wrap_content">
+                                    </EditText>
+                                    <ImageView
+                                        android:src="@drawable/city_icon"
+                                        android:tint="@color/white"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        tools:ignore="UseAppTint">
+                                    </ImageView>
+
+                                </LinearLayout>
+                                <View
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/white">
+                                </View>
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:cardCornerRadius="2dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/updateProifleLayout"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/ripple_background">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Update Profile"
+                                            android:textSize="@dimen/submit_layout"
+                                            android:textColor="@color/white">
+                                        </TextView>
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <!-- <LinearLayout
+                                     android:layout_marginTop="50dp"
+                                     android:id="@+id/updateProifleLayout"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="40dp"
+                                     android:layout_marginLeft="50dp"
+                                     android:layout_marginBottom="20dp"
+                                     android:layout_marginRight="50dp"
+                                     android:background="@drawable/registration_custom_design"
+                                     android:orientation="horizontal">
+
+
+                                 </LinearLayout>-->
+
+                            </LinearLayout>
+                        </ScrollView>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

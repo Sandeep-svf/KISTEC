@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.in.kistec">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KISTEC"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".User.ResetPasswordActivity"></activity>
+        <activity android:name=".User.ForgotPasswordActivity" />
+        <activity android:name=".OTP_Verificaation_Activity" />
+        <activity android:name=".Activity.Testing" />
+        <activity android:name=".Search_Details" />
+        <activity android:name=".User.splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.OTP" />
+        <activity android:name=".NotificationActivity.NotificationActivity" />
+        <activity android:name=".ForgotPasswordActivity.ForgotPasswordActivityTwo" />
+        <activity android:name=".SignUpActivity.SignUpAddProfileActivity" />
+        <activity android:name=".SignUpActivity.SignUpOtpActivity" />
+        <activity android:name=".SettingsActivity.TermAndConditionActivity" />
+        <activity android:name=".SettingsActivity.PrivacyPolicyActivity" />
+        <activity android:name=".SettingsActivity.ContactUsActivity" />
+        <activity android:name=".SettingsActivity.AboutUsActivity" />
+        <activity android:name=".SettingsActivity.ChangePasswordActivity" />
+        <activity android:name=".SettingsActivity.UpdateEmailActivity" />
+        <activity android:name=".StatusListIndivisualDetailsActivity" />
+        <activity android:name=".SettingsActivity.MyProfileActivity" />
+        <!-- <activity android:name=".Admin.ApproveRejectActivity" /> -->
+        <!-- <activity android:name=".Admin.SubmitedListActivity" /> -->
+        <!-- <activity android:name=".AddRecoard.AddRecordActivity" /> -->
+        <!-- <activity android:name=".Admin.AdminHomeActivity" /> -->
+        <!-- <activity android:name=".ManageProfile.ManageProfileActivity" /> -->
+        <activity android:name=".ForgotPasswordActivity.ForgotPasswordActivity" />
+        <activity android:name=".User.UserHomeActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".ImportDocHelperClass.ImagesActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ImportDocHelperClass.FullImageActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".LoginActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name=".Clases.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

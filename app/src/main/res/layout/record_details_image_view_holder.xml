@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:background="@drawable/custom_border_import_doc"
+    android:layout_marginLeft="15dp"
+    android:layout_height="140dp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_margin="1dp"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:src="@drawable/save"
+        android:layout_height="match_parent">
+    </ImageView>
+</LinearLayout>

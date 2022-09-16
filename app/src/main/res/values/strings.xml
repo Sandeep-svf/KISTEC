@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">CRB</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name">Name</string>
+    <string name="editInformation">EDIT INFORMATION</string>
+    <string name="accountInformation">ACCOUNT INFORMATON</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">E-Mail</string>
+    <string name="changePassword">Change Password</string>
+    <string name="currentPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="personName">Person Name</string>
+    <string name="personMobile">Mobile Number</string>
+    <string name="personIndentification">Person Indentification</string>
+    <string name="aboutPerson">A fan or fanatic, sometimes also termed an aficionado or enthusiast, is a person who exhibits strong interest or admiration for something or somebody, such as a celebrity or a sport or a sports team, a genre, a politician, a book, a movie, a video game or an entertainer.</string>
+    <string name="myProfile">My Profile</string>
+    <string name="updateEmail">Update Email</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="termCondotion"><![CDATA[Terms & Conditions]]></string>
+    <string name="logout">Logout</string>
+    <string name="abputUs">About Us</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="personType">CASE TYPE. BAD TENANT / BAD LOAN</string>
+    <string name="entrOtp">Insert Code</string>
+    <string name="uploadPhoto">Upload Profile Photo</string>
+    <string name="phoneOrEmail">Phone or e-mail</string>
+    <string name="password">Password</string>
+    <string name="oldPassword">Old Password</string>
+    <string name="verify">Verify</string>
+    <string name="quiz_app">Please verify your phone numbr</string>
+    <string name="verification_code">Verification Code</string>
+
+
+    <array name="personType">
+        <item>Rent Money</item>
+        <item>Rent House</item>
+
+    </array>
+
+
+    <string name="internal_storage">internal_storage</string>
+    <string name="camera">Camera</string>
+    <string name="folder">Folder</string>
+    <string name="done">Done</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo_file_can_t_be_created_please_try_again">photo_file_can_t_be_created_please_try_again</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="date">Date</string>
+    <string name="repoartedBy">Reported By</string>
+    <string name="totalNumberOfResult">Total number of result are </string>
+    <string name="registration">REGISTER</string>
+    <string name="names">Name</string>
+    <string name="emails">Email</string>
+    <string name="passwords">New Password</string>
+    <string name="confirmPasswords">Confirm Password</string>
+    <string name="phoneNumbers">Phone Number</string>
+    <string name="termCondotions"><![CDATA[Terms & Conditions]]></string>
+    <string name="registerNow">REGISTER NOW</string>
+    <string name="signIn">Already have an account?</string>
+    <string name="signin">Sign in</string>
+    <string name="cityName">City / Town</string>
+    <string name="verifydesc">We have sent OTP on your number</string>
+    <string name="enter_phone">Please enter your mobile number</string>
+    <string name="right_number">Please enter right number</string>
+    <string name="login">LOGIN</string>
+    <string name="creatAnAccount">Create an account?</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="signup">Sign up</string>
+    <string name="phone_national">Enter Phone / National ID</string>
+    <string name="home">SEARCH PERSON</string>
+    <string name="setting">SETTINGS</string>
+    <string name="view_status">VIEW STATUS</string>
+    <string name="add_member">FILE CASE REPORT</string>
+    <string name="View_details">Person Details</string>
+    <string name="person_id">Person ID</string>
+    <string name="phone_nomber">Phone Number</string>
+    <string name="about_person">About Person</string>
+    <string name="status">Status</string>
+    <string name="Edit_Proifle">Edit Profile</string>
+    <string name="update_password">Update Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="submit">Submit</string>
+    <string name="writehere">Write here...</string>
+    <string name="address_contact_us">Rashtrapati Bhavan, New Delhi,\n
+        India – 110 004</string>
+    <string name="address_contact_usd">India – 110 004</string>
+    <string name="mobile_contact_us">(800) 225-930-5723</string>
+    <string name="email_contact_us">kistecbusinecss@gmail.com</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="we_will_send_otp">We will send you a OTP Message</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="App_detail">This is an app where members of Kistec business Association report and upload cases of bad debtors,loan defaulters who deliberately refuse to pay their loans and tenant defaulters who abscond rent payment and maybe relocate without paying their bills.This app allows members to check the credit rating and credit background check on anyone reported before leasing out your property to such a client or giving that client or person a loan.The app has a pay service where customers can information whereabout are these defaulters and their new contact numbers if they have changed.</string>
+
+
+
+    <string name="lbl_set_profile_photo">Set Your Image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+</resources>

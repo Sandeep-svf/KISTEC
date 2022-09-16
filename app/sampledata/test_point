@@ -1,0 +1,28 @@
+Sign up check
+Forgot password check
+login check
+HOME -> search , Search details, check
+ADD MEMBER -> record added successfully check picture and pdf both  (fix spinner color)
+VIEW Status -> list , edit record successflly edited pic and pdf
+SETTING -> my profile ,logout, privacy policy, terms $ condition , logout , check
+About Us , Contact Us (Need Data )
+Notification -> list , single delete, clear all, check
+
+
+Fix
+Name in all fragment
+Notification Icon
+(fix spinner color)
+(need correction in design in view status details with recylerview  )
+(need json response for duplicate entry of phone number in my profile)
+
+in procerss in status view fragment
+
+Before build change country code to +1
+
+mobappssolution130@gmail.com
+1234567
+
+remove toast otp
+
+

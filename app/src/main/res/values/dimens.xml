@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16sp</dimen>
+    <dimen name="submit_layout">20sp</dimen>
+    <dimen name="heading">18sp</dimen>
+    <dimen name="menu_text_sie">12dp</dimen>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_darkwhite_design">
+
+      <LinearLayout
+          android:weightSum="4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_weight="2.5"
+            android:layout_marginLeft="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:text="Person Name"
+            android:textSize="18dp"></TextView>
+
+
+        <TextView
+            android:layout_weight="1.5"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/personNameList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:singleLine="true"
+            android:text="Lieaon Wilson"
+            android:textSize="18dp"></TextView>
+
+      </LinearLayout>
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_weight="2.5"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="Requested By"
+                android:textSize="18dp"></TextView>
+
+
+            <TextView
+                android:layout_weight="1.5"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/usernameRequestedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:singleLine="true"
+                android:text="cristiano ronaldo"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_weight="2.5"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="Status"
+                android:textSize="18dp"></TextView>
+
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:singleLine="true"
+                android:text="Pending"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

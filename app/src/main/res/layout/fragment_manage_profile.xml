@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ManageProfile.ManageProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@color/darkblue">-->
+<!--        <TextView-->
+<!--            android:textSize="18dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Settings"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/white" >-->
+<!--        </TextView>-->
+<!--        <FrameLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true">-->
+<!--            <ImageView-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:tint="@color/white"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/bell"-->
+<!--                tools:ignore="UseAppTint">-->
+<!--            </ImageView>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:background="@drawable/custom_background_notification">-->
+<!--                <TextView-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="4"-->
+<!--                    android:textColor="@color/white">-->
+
+<!--                </TextView>-->
+
+<!--            </LinearLayout>-->
+<!--        </FrameLayout>-->
+
+<!--    </RelativeLayout>-->
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/jijiw"
+        android:text="User Setting"
+        android:textSize="@dimen/heading"
+        ></TextView>
+    <RelativeLayout
+        android:id="@+id/myProfileLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/jiji"
+            tools:ignore="UseAppTint">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/jiji"
+            android:text="@string/myProfile"
+            android:textSize="@dimen/fab_margin"
+            ></TextView>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint"
+        >
+
+    </View>
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/updatedEmailLayout"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:tint="@color/darkblue"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/email"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:id="@+id/jijii"-->
+<!--            tools:ignore="UseAppTint">-->
+<!--        </ImageView>-->
+
+<!--        <TextView-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toRightOf="@+id/jijii"-->
+<!--            android:text="@string/updateEmail"-->
+<!--            android:textSize="@dimen/fab_margin"-->
+<!--            ></TextView>-->
+
+
+
+
+<!--    </RelativeLayout>-->
+<!--    <View-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/hint"-->
+<!--        >-->
+
+<!--    </View>-->
+
+
+    <RelativeLayout
+        android:id="@+id/changePasswordLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/change_password"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/jijiw"
+            tools:ignore="UseAppTint">
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/jijiw"
+            android:text="@string/changePassword"
+            android:textSize="@dimen/fab_margin"
+            ></TextView>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint"
+        >
+
+    </View>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/privacyPolicyLayout"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/policy"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:id="@+id/jijiwc"-->
+<!--            tools:ignore="UseAppTint">-->
+<!--        </ImageView>-->
+
+<!--        <TextView-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toRightOf="@+id/jijiwc"-->
+<!--            android:text="@string/privacyPolicy"-->
+<!--            android:textSize="@dimen/fab_margin"-->
+<!--            ></TextView>-->
+
+
+
+
+<!--    </RelativeLayout>-->
+<!--    <View-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/hint"-->
+<!--        >-->
+
+<!--    </View>-->
+
+
+    <RelativeLayout
+        android:id="@+id/termAndConditionLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/terms_and_conditions"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/jijiwcj"
+            tools:ignore="UseAppTint">
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/jijiwcj"
+            android:text="@string/termCondotion"
+            android:textSize="@dimen/fab_margin"
+            ></TextView>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint"
+        >
+
+    </View>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/jijiw"
+        android:text="App Setting"
+        android:textSize="@dimen/heading"
+        ></TextView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/logoutLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logout"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/jijiwcjfy"
+            tools:ignore="UseAppTint">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/jijiwcjfy"
+            android:text="@string/logout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fab_margin"></TextView>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint"
+        >
+
+    </View>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/aboutUsLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/about_us"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/jijiwcjfd"
+            tools:ignore="UseAppTint">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/jijiwcjfd"
+            android:text="@string/abputUs"
+            android:textSize="@dimen/fab_margin"
+            ></TextView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/contactUsLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/contact_us"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/jijiwcjf"
+            tools:ignore="UseAppTint">
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/jijiwcjf"
+            android:text="@string/contactUs"
+            android:textSize="@dimen/fab_margin"
+            ></TextView>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hint"
+        >
+
+    </View>
+    </LinearLayout>
+</ScrollView>

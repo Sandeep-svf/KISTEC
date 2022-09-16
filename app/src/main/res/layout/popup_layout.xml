@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile1"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+<Button
+    android:backgroundTint="@color/lightgreen"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/homeOnRent"
+    android:text="Home on Rent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+</Button>
+
+        <Button
+            android:backgroundTint="@color/lightgreen"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/lendMoney"
+            android:text=" Lend a Money "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    tools:context=".SignUpActivity.SignUpAddProfileActivity">
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_logos"
+                    ></de.hdodenhof.circleimageview.CircleImageView>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_upper_white_design"
+                android:layout_height="50dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uploadPhoto"
+                    android:gravity="center"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <FrameLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userProfileManage"
+                        android:layout_gravity="center"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/nj"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_width="60dp"
+                        android:layout_marginBottom="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/add_circle_design"
+                        android:layout_toRightOf="@+id/userProfileManage"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/add"
+                            android:tint="@color/white"
+                            tools:ignore="UseAppTint">
+
+                        </ImageView>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/signupAddProfileLayout"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/multi_color_background"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Continue"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_down_white_design">
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

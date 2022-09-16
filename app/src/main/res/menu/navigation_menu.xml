@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home">
+    </item>
+
+    <item android:id="@+id/menu_add_record"
+        android:icon="@drawable/add"
+        android:title="Add record">
+    </item>
+
+    <item android:id="@+id/menu_Status"
+        android:iconTint="@color/darkblue"
+        android:icon="@drawable/charging_circle"
+        android:title="Status">
+    </item>
+
+    <item android:id="@+id/menu_manage_profile"
+        android:icon="@drawable/setting"
+        android:title="Settings">
+    </item>
+
+</menu>
